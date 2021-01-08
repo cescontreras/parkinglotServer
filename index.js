@@ -17,13 +17,6 @@ conn.sync({ force: false }).then(() => {
             raw: true,
             updateOnDuplicate: ["number"], 
         }).then(() => console.log("Parking Lot Created"));
-        
-        
-        const types = [{type:"motorcycle"}, {type: "sedan"},{type:"truck"}]
-        VehicleType.bulkCreate(types, {
-            raw: true,
-            updateOnDuplicate: ["type"], 
-        }).then(() => console.log("Types Created"));
 
     });
 });
