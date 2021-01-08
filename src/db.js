@@ -40,8 +40,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 // Para relacionarlos hacemos un destructuring
 const {
 	Vehicle,
-	ParkingSpace, 
-	VehicleType
+	ParkingSpace
 } = sequelize.models;
 
 //-------RELACIONES
