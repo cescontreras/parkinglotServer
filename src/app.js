@@ -18,4 +18,8 @@ server.use(morgan("dev"));
 
 server.use("/", routes);
 
+server.get("/", (req, res) => {
+  res.status(200).send("Hello Heroku")
+})
+
 module.exports = server;
